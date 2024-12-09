@@ -1,0 +1,46 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Pr\'esentation g\'en\'erale}{5}
+\contentsline {chapter}{\numberline {2}Interface fortran usager}{9}
+\contentsline {section}{\numberline {2.1}lfaouv: ouverture}{9}
+\contentsline {section}{\numberline {2.2}lfafer: fermeture}{9}
+\contentsline {section}{\numberline {2.3}lfaprecr: pr\'ecision des r\'eels en \'ecriture}{10}
+\contentsline {section}{\numberline {2.4}lfapreci: pr\'ecision des entiers en \'ecriture}{10}
+\contentsline {section}{\numberline {2.5}lfaecrr: \'ecriture de r\'eels}{10}
+\contentsline {section}{\numberline {2.6}lfaecri: \'ecriture d'entiers}{11}
+\contentsline {section}{\numberline {2.7}lfaecrc: \'ecriture de caract\`eres}{11}
+\contentsline {section}{\numberline {2.8}lfalecr: lecture de r\'eels}{12}
+\contentsline {section}{\numberline {2.9}lfaleci: lecture d'entiers}{13}
+\contentsline {section}{\numberline {2.10}lfalecc: lecture de caract\`eres}{14}
+\contentsline {section}{\numberline {2.11}lfatest: le fichier est-il LFA?}{15}
+\contentsline {section}{\numberline {2.12}lfames: niveau de messagerie}{15}
+\contentsline {section}{\numberline {2.13}lfaerf: niveau d'erreur admis}{16}
+\contentsline {section}{\numberline {2.14}lfalaf: liste des articles sur output standard}{16}
+\contentsline {section}{\numberline {2.15}lfalaft: liste des articles sur tableau de caract\`eres}{16}
+\contentsline {section}{\numberline {2.16}lfaminm: extrema de tous les articles}{17}
+\contentsline {section}{\numberline {2.17}lfacas: renseignements sur un article}{17}
+\contentsline {section}{\numberline {2.18}lfaavan: saut de l'article courant}{18}
+\contentsline {section}{\numberline {2.19}lfarew: rebobinage du fichier}{19}
+\contentsline {section}{\numberline {2.20}lfacop: copie d'article de fichier \`a fichier}{19}
+\contentsline {chapter}{\numberline {3}Interface UNIX usager}{21}
+\contentsline {section}{\numberline {3.1}lfalaf: liste des articles}{21}
+\contentsline {section}{\numberline {3.2}lfaminm: sortie des extrema et moyenne}{21}
+\contentsline {section}{\numberline {3.3}lfaedit: \'edition sous forme texte}{21}
+\contentsline {section}{\numberline {3.4}lfac: extraction d'un article}{22}
+\contentsline {section}{\numberline {3.5}lfacop: copie d'articles d'un fichier \`a l'autre}{22}
+\contentsline {section}{\numberline {3.6}lfareu: r\'eunion de deux fichiers}{22}
+\contentsline {section}{\numberline {3.7}lfamoy: moyenne de n fichiers}{22}
+\contentsline {section}{\numberline {3.8}lfacre: cr\'eation d'un fichier depuis la ligne de commande}{23}
+\contentsline {section}{\numberline {3.9}lfadiff: diff\'erence de deux fichiers}{23}
+\contentsline {section}{\numberline {3.10}lfadiffrel: diff\'erence relative de deux fichiers}{24}
+\contentsline {section}{\numberline {3.11}lfadiffart: diff\'erence d'articles entre deux fichiers}{24}
+\contentsline {section}{\numberline {3.12}lfa2lfp: obtention d'une version ASCII texte du fichier}{24}
+\contentsline {section}{\numberline {3.13}lfp2lfa: passage d'une version ASCII texte \`a un LFA}{25}
+\contentsline {section}{\numberline {3.14}lfa2lfa: modification de la pr\'ecision des donn\'ees}{25}
+\contentsline {chapter}{\numberline {4}Exemples d'utilisation}{27}
+\contentsline {section}{\numberline {4.1}Simple \'ecriture / lecture}{27}
+\contentsline {section}{\numberline {4.2}Lecture s\'equentielle de tout un fichier}{27}
+\contentsline {section}{\numberline {4.3}Lecture hors du cadre LFA}{27}
+\contentsline {chapter}{\numberline {5}Pr\'esentation d\'etaill\'ee: principes de fonctionnement interne}{29}
+\contentsline {section}{\numberline {5.1}Structure des fichiers}{29}
+\contentsline {section}{\numberline {5.2}Position du pointeur}{29}
+\contentsline {chapter}{\numberline {6}Versions du logiciel}{31}

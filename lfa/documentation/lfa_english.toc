@@ -1,0 +1,42 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Main features}{5}
+\contentsline {chapter}{\numberline {2}Fortran user interface}{7}
+\contentsline {section}{\numberline {2.1}lfaouv: Open}{7}
+\contentsline {section}{\numberline {2.2}lfafer: Close}{7}
+\contentsline {section}{\numberline {2.3}lfaprecr: Force real data writing precision}{8}
+\contentsline {section}{\numberline {2.4}lfapreci: Force integer data writing precision}{8}
+\contentsline {section}{\numberline {2.5}lfaecrr: Write real data }{8}
+\contentsline {section}{\numberline {2.6}lfaecri: Write integer data }{9}
+\contentsline {section}{\numberline {2.7}lfaecrc: Write character data }{9}
+\contentsline {section}{\numberline {2.8}lfalecr: Read real data }{10}
+\contentsline {section}{\numberline {2.9}lfaleci: Read integer data }{11}
+\contentsline {section}{\numberline {2.10}lfalecc: Read character data }{12}
+\contentsline {section}{\numberline {2.11}lfatest: Test if a file is a LFA one}{13}
+\contentsline {section}{\numberline {2.12}lfames: Print out level of software}{13}
+\contentsline {section}{\numberline {2.13}lfaerf: Choose error level of software}{14}
+\contentsline {section}{\numberline {2.14}lfalaf: Article list}{14}
+\contentsline {section}{\numberline {2.15}lfalaft: Article list, on an array}{14}
+\contentsline {section}{\numberline {2.16}lfaminm: Extrema of all articles}{15}
+\contentsline {section}{\numberline {2.17}lfacas: Get documentation about an article}{15}
+\contentsline {section}{\numberline {2.18}lfaavan: Step over current article}{16}
+\contentsline {section}{\numberline {2.19}lfarew: Rewind}{17}
+\contentsline {section}{\numberline {2.20}lfacop: Copy one article from a LFA file to another}{17}
+\contentsline {chapter}{\numberline {3}UNIX user interface}{19}
+\contentsline {section}{\numberline {3.1}lfalaf: Get the articles list of a LFA file}{19}
+\contentsline {section}{\numberline {3.2}lfaminm: Prints out extrema of all articles}{19}
+\contentsline {section}{\numberline {3.3}lfaedit: Edit one (or more) LFA file(s)}{19}
+\contentsline {section}{\numberline {3.4}lfac: Extract one article on standard output }{20}
+\contentsline {section}{\numberline {3.5}lfacop: copy articles from a file to another}{20}
+\contentsline {section}{\numberline {3.6}lfareu: Fuse two LFA files}{20}
+\contentsline {section}{\numberline {3.7}lfamoy: Mean of n files}{21}
+\contentsline {section}{\numberline {3.8}lfacre: Create a LFA file from command line}{21}
+\contentsline {section}{\numberline {3.9}lfadiff: Difference between two LFA files}{21}
+\contentsline {section}{\numberline {3.10}lfadiffrel: Relative difference between two LFA files}{22}
+\contentsline {section}{\numberline {3.11}lfadiffart: Articles list difference between two LFA files}{22}
+\contentsline {section}{\numberline {3.12}lfa2lfp: Convert a LFA file into a LFP one}{22}
+\contentsline {section}{\numberline {3.13}lfp2lfa: Convert a LFP file into a LFA one}{23}
+\contentsline {section}{\numberline {3.14}lfa2lfa: Convert a LFA file into another LFA file}{23}
+\contentsline {chapter}{\numberline {4}Some examples}{25}
+\contentsline {section}{\numberline {4.1}Simple read/write}{25}
+\contentsline {section}{\numberline {4.2}Sequential reading of a whole file}{25}
+\contentsline {section}{\numberline {4.3}Read a LFA file without installing the software}{25}
