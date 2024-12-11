@@ -9,7 +9,7 @@ derivatives.
 
 # Running an experiment with DDH (on ATOS)
 
-## 1) You can use the main cy46 repo as the changes are there now.
+## 1) You can use the main CY46 repo as the changes are there now.
 
 ```bash
 mkdir -p $SCRATCH/harmonie_releases/git/HCY46_DDH
