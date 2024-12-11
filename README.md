@@ -17,7 +17,7 @@ cd $SCRATCH/harmonie_releases/git/HCY46_DDH
 git clone git@github.com:Hirlam/Harmonie.git
 cd Harmonie
 ```
-2) Set-up a HARMONIE experiment as normal. Update your config_exp.h
+## 2) Set-up a HARMONIE experiment as normal. Update your config_exp.h
 
 - To use DDH, set USEDDH="yes" in ecf/config_exp.h
 - To archive DDH data to ec or ectmp include ddh in the archiving strategy in ecf/config_exp.h
@@ -41,12 +41,12 @@ If TFLAG="min", you need to change the file output times to something like
   SWRITUPTIMES="00-180:60"                      # Surfex model state output times
   SFXWFTIMES=$SWRITUPTIMES                # SURFEX history FA file IO server gathering times
 ```
-3) Update your namelist (first copy nam/harmonie_namelists.pm your own experiment and place in nam folder which you'll have to create).
+## 3) Update your namelist (first copy nam/harmonie_namelists.pm your own experiment and place in nam folder which you'll have to create).
 
 Setting up the namelist (nam/harmonie_namelists.pm).
 
 A. Below is an example where point data for Dublin is extracted.
-
+```bash
 %ddh=(
 NAMDDH => {
 'LFLEXDIA' => '.TRUE.,', # Must be TRUE
@@ -68,3 +68,28 @@ NAMDDH => {
 'LHDENT' => '.FALSE.,',
 },
 );
+```
+B. Below is an example where the point with index (100,100) is chosen.
+```bash
+%ddh=(
+NAMDDH => {
+'LFLEXDIA' => '.TRUE.,', # Must be TRUE
+'BDEDDH(1,01)' => '1.,', # 4 means a point
+'BDEDDH(2,01)' => '1.,',
+'BDEDDH(3,01)' => '100.,', 
+'BDEDDH(4,01)' => '100.,',
+'LHDGLB' => '.FALSE.,',
+'LHDZON' => '.FALSE.,',
+'LHDDOP' => '.TRUE.,', # Must be TRUE
+'LHDPRG' => '.FALSE.,',
+'LHDPRZ' => '.FALSE.,',
+'LHDPRD' => '.FALSE.,',
+'LHDEFG' => '.FALSE.,',
+'LHDEFZ' => '.FALSE.,',
+'LHDEFD' => '.TRUE.,', # Must be TRUE
+'LHDHKS' => '.TRUE.,', # Must be TRUE
+'LHDMCI' => '.FALSE.,',
+'LHDENT' => '.FALSE.,',
+},
+);
+```
