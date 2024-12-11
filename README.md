@@ -186,9 +186,46 @@ The next 10 characters (suffix) represent the field-specific name.
 For example FCTRAYSO stands for thermal energy flux caused by solar radiation (i.e. F=Flux, CT= thermal energy, RAYSO=Solar radiation)
 ```
 ```bash
-Exercise: 
+**Exercise: **
 Pick a physical variable, like thermal energy (CT), and try to understand which tendency components affect it. 
 Find all variables of the form TCTxxxxxxxxxx and try to interpret what they mean.
 Hint: very detailed ddh documentation about the variable names can be found at /path/to/ddhtoolbox/documentation/ddh.pdf. It should solve most of the problems you will ever face with ddh.
 ```
+# Visualising the output
 
+The next step is to visualize the file content. For that, we have prepared a set of ways to do it.
+
+1.Use the ddhtoolbox
+
+This toolbox includes ready-to-be-used scripts for ddh files. To enable these, export one more path and three variables:
+
+```bash
+export PATH=/path/to/ddhtoolbox/tools/.dd2gr/src:$PATH
+export DDHB_BPS=/path/to/ddhtoolbox/ddh_budget_lists
+export DDHI_LIST=/path/to/ddhtoolbox/ddh_budget_lists/conversion_list
+export DDH_PLOT=dd2gr
+```
+
+Now one may visualize the content of a file in multiple different ways. Perhaps the most simple way is to illustrate some variable's budget at a particular time step. To do this, we use the script called ddhb (= ddh budget). NB ensure you are in the directory containing the DDH files and ensure files are for one domain only:
+
+```bash
+ddhb -v harome_46h1/CT -i DHFDLHARM+0003 -o DHFDLHARM+0003.CT.svg
+```
+
+This creates an .svg file of the temperature budget based on the input file DHFDLHARM+0003. The .svg file can be converted to e.g. .png with the command
+
+```bash
+convert filename.svg filename.png
+```
+
+A sample image called "CT_example.png" can be found in the attachments of this page.
+
+The argument -v harome_46h1/CT points to the temperature budget list located in $DDHB_BPS/harome_46h1/CT.fbl (see above). Similarly, you can plot the budget of water vapour with harome_46/QV or budget of zonal momentum with harome_46h1/UU.
+
+Note: in case you have run an experiment with multiple domains (="ddh points"), you may want to horizontally average all the points before running ddhb to produce a meaningful image. One may do this with ddht (=ddh transform):
+
+```bash
+ddht -cMOY_HORIZ -1DHFDLHARM+0003 -sDHFDLHARM+0003.mean
+```
+
+Note: there is no whitespace after -c/-1/-s when using ddht.
