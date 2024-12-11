@@ -93,3 +93,100 @@ NAMDDH => {
 },
 );
 ```
+# Examining the output
+
+As a result of your experiment the system produces DDH files with names of the form DHFDLHARM+XXXX, located in ectmp (on Atos) and in the forecast folder in the work directory e.g. $SCRATCH/$USER/hm_home/46h1_ddh/2024061200_00/forecast/.
+As they work directories are frequently cleaned by the scripting system, you will most likely find your files in ectmp.
+
+If you do not have any DDH files of your own, you can find some at https://opensource.umr-cnrm.fr/attachments/5978
+
+The content of these files can be viewed using the lfa tools in the ddhtoolbox. To download the toolbox, you can download it from github:
+
+https://github.com/UMR-CNRM/ddhtoolbox
+
+After having the folder,
+
+```bash
+cd /ddhtoolbox/tools/
+export PATH=.:$PATH
+```
+
+and run two scripts to install it:
+
+```bash
+./install clean
+./install
+```
+
+Now the various "tools" are compiled. To enable the fa tools, you need to set up some paths. For example on ATOS, you need to set the following paths (which may differ a bit for you depending on where you downloaded the ddhtoolbox to).
+
+```bash
+export PATH=$HOME/ddhtoolbox/tools/lfa:$PATH
+export PATH=$HOME/ddhtoolbox/tools:$PATH
+```
+
+Now you may use the lfa tools to view the contents of a DHFDLHARM+XXXX file by typing
+
+```bash
+lfaminm /path/to/DHFDLHARM+XXXX
+```
+
+Something like this should be seen:
+
+```bash
+l=     715, min=   0.000     max=  0.7583E-20 mea=  0.1061E-22 rms=  0.2836E-21|R4| TQRADJU
+l=     715, min=   0.000     max=  0.3803E-05 mea=  0.3413E-07 rms=  0.2528E-06|R4| TQIADJU
+l=     715, min=   0.000     max=  0.2221E-21 mea=  0.4995E-24 rms=  0.9278E-23|R4| TQSADJU
+l=     715, min=   0.000     max=   0.000     mea=   0.000     rms=   0.000    |R4| TQGADJU
+l=     715, min=   0.000     max=   164.8     mea=   6.129     rms=   27.53    |R4| VNT1
+l=     715, min=   0.000     max=   12.39     mea=  0.3109E-01 rms=  0.4998    |R4| VNT0
+l=     715, min= -0.1473E+06 max=  0.3615E+05 mea= -0.2768E+05 rms=  0.3256E+05|R4| TCTRAD
+l=     726, min=   0.000     max=  0.1080E-10 mea=  0.1636E-12 rms=  0.1329E-11|R4| FCTRAYSO
+l=     726, min= -0.2967E+07 max= -0.3987E+06 mea= -0.1693E+07 rms=  0.1804E+07|R4| FCTRAYTH
+l=     715, min=   0.000     max=  0.1818E+05 mea=   155.8     rms=   1272.    |R4| TKESHEAR
+l=     715, min=  -1.319     max=   783.6     mea=   2.660     rms=   38.88    |R4| TCTUP
+l=     715, min= -0.3119E-03 max=  0.5250E-06 mea= -0.1059E-05 rms=  0.1547E-04|R4| TQVUP
+l=     715, min=  -5541.     max=   5721.     mea=  0.4685E-02 rms=   297.9    |R4| TCTSCONV
+l=     715, min= -0.1298E-02 max=  0.1349E-02 mea=  0.1021E-08 rms=  0.7002E-04|R4| TQVSCONV
+l=     715, min=  -108.4     max=   146.7     mea= -0.1069     rms=   10.04    |R4| TUUVTUR
+```
+
+The names on the right can be interpreted as follows:
+
+```bash
+The first letter of the name is the info on the type of field:
+V: variable 
+T: tendency 
+F: flux 
+S: soil
+```
+
+The second and third letters of the name represented the physical variable:
+```bash
+PP: pressure,
+QV: specific water vapour content,
+QL: cloud liquid,
+QI: cloud ice,
+QR: rain,
+QS: snow,
+QG: graupel,
+UU: zonal momentum,
+VV: merional momentum,
+WW: omega,
+KK: kinetic energy,
+CT: thermal energy,
+EN: entropy,
+M1: angular momentum,
+EP: potential energy (Φ = g z).
+```
+
+The next 10 characters (suffix) represent the field-specific name.
+
+For example FCTRAYSO stands for thermal energy flux caused by solar radiation (i.e. F=Flux, CT= thermal energy, RAYSO=Solar radiation)
+
+Exercise: 
+Pick a physical variable, like thermal energy (CT), and try to understand which tendency components affect it. 
+Find all variables of the form TCTxxxxxxxxxx and try to interpret what they mean.
+Hint: very detailed ddh documentation about the variable names can be found at /path/to/ddhtoolbox/documentation/ddh.pdf. It should solve most of the problems you will ever face with ddh.
+
+
