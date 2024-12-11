@@ -220,7 +220,9 @@ convert filename.svg filename.png
 
 A sample image called "CT_example.png" can be found in the attachments of this page.
 
+```bash
 The argument -v harome_46h1/CT points to the temperature budget list located in $DDHB_BPS/harome_46h1/CT.fbl (see above). Similarly, you can plot the budget of water vapour with harome_46/QV or budget of zonal momentum with harome_46h1/UU.
+```
 
 Note: in case you have run an experiment with multiple domains (="ddh points"), you may want to horizontally average all the points before running ddhb to produce a meaningful image. One may do this with ddht (=ddh transform):
 
