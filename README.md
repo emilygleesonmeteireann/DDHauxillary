@@ -182,11 +182,13 @@ EP: potential energy (Φ = g z).
 
 The next 10 characters (suffix) represent the field-specific name.
 
+```bash
 For example FCTRAYSO stands for thermal energy flux caused by solar radiation (i.e. F=Flux, CT= thermal energy, RAYSO=Solar radiation)
-
+```
+```bash
 Exercise: 
 Pick a physical variable, like thermal energy (CT), and try to understand which tendency components affect it. 
 Find all variables of the form TCTxxxxxxxxxx and try to interpret what they mean.
 Hint: very detailed ddh documentation about the variable names can be found at /path/to/ddhtoolbox/documentation/ddh.pdf. It should solve most of the problems you will ever face with ddh.
-
+```
 
