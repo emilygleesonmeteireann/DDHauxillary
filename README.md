@@ -9,7 +9,7 @@ derivatives.
 
 # Running an experiment with DDH (on ATOS)
 
-1) You can use the main cy46 repo as the changes are there now.
+## 1) You can use the main cy46 repo as the changes are there now.
 
 ```bash
 mkdir -p $SCRATCH/harmonie_releases/git/HCY46_DDH
@@ -41,3 +41,30 @@ If TFLAG="min", you need to change the file output times to something like
   SWRITUPTIMES="00-180:60"                      # Surfex model state output times
   SFXWFTIMES=$SWRITUPTIMES                # SURFEX history FA file IO server gathering times
 ```
+3) Update your namelist (first copy nam/harmonie_namelists.pm your own experiment and place in nam folder which you'll have to create).
+
+Setting up the namelist (nam/harmonie_namelists.pm).
+
+A. Below is an example where point data for Dublin is extracted.
+
+%ddh=(
+NAMDDH => {
+'LFLEXDIA' => '.TRUE.,', # Must be TRUE
+'BDEDDH(1,01)' => '4.,', # 4 means a point
+'BDEDDH(2,01)' => '1.,',
+'BDEDDH(3,01)' => '-006.000000,', # Dublin lon
+'BDEDDH(4,01)' => '0053.000000,', # Dublin lat
+'LHDGLB' => '.FALSE.,',
+'LHDZON' => '.FALSE.,',
+'LHDDOP' => '.TRUE.,', # Must be TRUE
+'LHDPRG' => '.FALSE.,',
+'LHDPRZ' => '.FALSE.,',
+'LHDPRD' => '.FALSE.,',
+'LHDEFG' => '.FALSE.,',
+'LHDEFZ' => '.FALSE.,',
+'LHDEFD' => '.TRUE.,', # Must be TRUE
+'LHDHKS' => '.TRUE.,', # Must be TRUE
+'LHDMCI' => '.FALSE.,',
+'LHDENT' => '.FALSE.,',
+},
+);
