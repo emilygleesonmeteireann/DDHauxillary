@@ -195,7 +195,7 @@ Hint: very detailed ddh documentation about the variable names can be found at /
 
 The next step is to visualize the file content. For that, we have prepared a set of ways to do it.
 
-1.Use the ddhtoolbox
+## 1.Use the ddhtoolbox
 
 This toolbox includes ready-to-be-used scripts for ddh files. To enable these, export one more path and three variables:
 
@@ -231,3 +231,7 @@ ddht -cMOY_HORIZ -1DHFDLHARM+0003 -sDHFDLHARM+0003.mean
 ```
 
 Note: there is no whitespace after -c/-1/-s when using ddht.
+
+## 2. Daniel's scripts - See https://opensource.umr-cnrm.fr/attachments/5803. NB ensure you use latest version of Python on ATOS.
+
+## 3. Marvin's scripts
