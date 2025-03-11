@@ -287,7 +287,7 @@ def fillData(dataset, t, vn, data,nlat, nlon, nlevs,nfluxs):
 def convertUNITS(dataset):
     print('Start Units conversion')
     TT     = ['CT1'] 
-    QX     = ['QL1','QI1','QR1','QS1','QG1','QV']
+    QX     = ['QL1','QI1','QR1','QS1','QG1','QV1']
     RH     = ['Q1']
     rest   = ['EK1', 'EP1', 'U1', 'V1','W1','Cloud1']
     pp = dataset.variables['PP1'][:]
