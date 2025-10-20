@@ -1,0 +1,171 @@
+Rad_sol,FCTRAYSO,solare radiation flux,W/m2/s
+Rad_thermal,FCTRAYTH,thermal radiation flux,W/m2/s
+U_vturb,TUUVTUR,vertical turbulence tendency of u velocity component,m/s
+V_vturb,TVVVTUR,vertical turbulence tendency of v velocity component,m/s
+W_vturb,TWWVTUR,vertical turbulence tendency of w velocity component,m/s
+CT_vturb,TCTVTUR,vertical turbulence tendency of thermal energy,K
+QV_vturb,TQVVTUR,vertical turbulence tendency of water vapour,g/kg
+QL_vturb,TQLVTUR,vertical turbulence tendency of cloud water,g/kg
+QI_vturb,TQIVTUR,vertical turbulence tendency of cloud ice,g/kg
+CT_sconv,TCTSCONV,shallow convection tendency of thermal energy,K
+QV_sconv,TQVSCONV,shallow convection tendency of water vapour,g/kg
+CT_scdry,TCTSCDRY,shallow convection tendency from dry updraft of temperature,K
+CT_scmoist,TCTSCMOIST,shallow convection tendency from moist updraft of temperature,K
+QV_scdry,TQVSCDRY,shallow convection tendency from dry updraft of water vapour,g/kg
+QV_scmoist,TQVSCMOIST,shallow convection tendency from moist updraft of water vapour,g/kg
+CT_micro,TCTMICRO,total microphysical tendency of thermal energy,K
+QV_micro,TQVMICRO,total microphysical tendency of water vapour,g/kg
+QL_micro,TQLMICRO,total microphysical tendency of cloud water,g/kg
+QR_micro,TQRMICRO,total microphysical tendency of rain,g/kg
+QI_micro,TQIMICRO,total microphysical tendency of cloud ice,g/kg
+QS_micro,TQSMICRO,total microphysical tendency of snow,g/kg
+QG_micro,TQGMICRO,total microphysical tendency of graupel,g/kg
+CT_up,TCTUP,updraft tendency of thermal energy due to precip,K
+QV_up,TQVUP,updraft tendency of water vapour due to precip,g/kg
+CT_rad,TCTRAD,radiation tendency of thermal energy,K
+U_hturb,TUUHTUR,horizontal turbulence tendency of u velocity component,m/s
+V_hturb,TVVHTUR,horizontal turbulence tendency of v velocity component,m/s
+W_hturb,TWWHTUR,horizontal turbulence tendency of w velocity component,m/s
+CT_hturb,TCTHTUR,horizontal turbulence tendency of thermal energy,K
+QV_hturb,TQVHTUR,horizontal turbulence tendency of water vapour,g/kg
+QL_hturb,TQLHTUR,horizontal turbulence tendency of cloud water,g/kg
+QI_hturb,TQIHTUR,horizontal turbulence tendency of cloud ice,g/kg
+CT_nega,TCTNEGA,correction of negative rations after advection (?),K
+QV_nega,TQVNEGA,correction of negative rations of water vapour after advection,g/kg
+QL_nega,TQLNEGA,correction of negative rations of cloud water after advection,g/kg
+QI_nega,TQINEGA,correction of negative rations of cloud ice after advection,g/kg
+QG_nega,TQGNEGA,correction of negative rations of grauple after advection,g/kg
+QS_nega,TQSNEGA,correction of negative rations of snow after advection,g/kg
+QR_nega,TQRNEGA,correction of negative rations of rain after advection,g/kg
+QH_nega,TQHNEGA,correction of negative rations of hail after advection,g/kg
+CT_adj,TCTADJU,adjustment tendency of thermal energy,K
+QV_adj,TQVADJU,adjustment tendency of water vapour,g/kg
+QL_adj,TQLADJU,adjustment tendency of cloud water,g/kg
+QI_adj,TQIADJU,adjustment tendency of cloud ice,g/kg
+QG_adj,TQGADJU,adjustment tendency of grauple,g/kg
+QS_adj,TQSADJU,adjustment tendency of snow,g/kg
+QR_adj,TQRADJU,adjustment tendency of rain,g/kg
+CT_hon,TCTHON_,tendency of thermal energy due to homogeonous nucleation of ice,K
+QL_hon,TQLHON_,tendency of cloud water due to homogeonous nucleation of ice,g/kg
+QI_hon,TQIHON_,tendency of cloud ice due to homogeonous nucleation of ice,g/kg
+CT_hen,TCTHENU,tendency of thermal energy due to heterogeneous nucleation of ice,K
+QV_hen,TQVHENU,tendency of water vapour due to homogeonous nucleation of ice,g/kg
+QI_hen,TQIHENU,tendency of cloud ice due to homogeonous nucleation of ice,g/kg
+CT_sfr,TCTSFR_,tendency of thermal energy due to spontaneous freezing,K
+QR_sfr,TQRSFR_,tendency of rain due to spontaneous freezing,g/kg
+QG_sfr,TQGSFR_,tendency of grauple due to spontaneous freezing,g/kg
+CT_frz,TCTCFRZ,tendency of thermal energy due to contact freezing,K
+QR_frz,TQRCFRZ,tendency of rain due to contact freezing,g/kg
+QG_frz,TQGCFRZ,tendency of grauple due to contact freezing,g/kg
+QI_frz,TQICFRZ,tendency of cloud ice due to contact freezing,g/kg
+CT_imlt,TCTIMLT,tendency of thermal energy due to melting ice,K
+QL_imlt,TQLIMLT,tendency of cloud water due to melting ice,g/kg
+QI_imlt,TQIIMLT,tendency of cloud ice due to melting ice,g/kg
+CT_gmlt,TCTGMLT,tendency of thermal energy due to melting grauple,K
+QG_gmlt,TQGGMLT,tendency of grauple due to melting grauple,g/kg
+QR_gmlt,TQRGMLT,tendency of rain due to melting grauple,g/kg
+CT_berf,TCTBERF,tendency of thermal energy due to Bergeron-Findeisen,K
+QL_berf,TQLBERF,tendency of cloud water due to Bergeron-Findeisen,g/kg
+QI_berf,TQIBERF,tendency of cloud ice due to Bergeron-Findeisen,g/kg
+CT_dryg,TCTDRYG,tendency of thermal energy due to dry growth,K
+QL_dryg,TQLDRYG,tendency of cloud water due to dry growth,g/kg
+QI_dryg,TQIDRYG,tendency of cloud ice due to dry growth,g/kg
+QG_dryg,TQGDRYG,tendency of grauple due to dry growth,g/kg
+QS_dryg,TQSDRYG,tendency of snow due to dry growth,g/kg
+QR_dryg,TQRDRYG,tendency of rain due to dry growth,g/kg
+CT_wetg,TCTWETG,tendency of thermal energy due to wet growth,K
+QL_wetg,TQLWETG,tendency of cloud water due to wet growth,g/kg
+QI_wetg,TQIWETG,tendency of cloud ice due to wet growth,g/kg
+QG_wetg,TQGWETG,tendency of grauple due to wet growth,g/kg
+QS_wetg,TQSWETG,tendency of snow due to wet growth,g/kg
+QR_wetg,TQRWETG,tendency of rain due to wet growth,g/kg
+CT_rim,TCTRIM_,tendency of thermal energy due to riming,K
+QL_rim,TQLRIM_,tendency of cloud water due to riming,g/kg
+QG_rim,TQGRIM_,tendency of grauple due to riming,g/kg
+QS_rim,TQSRIM_,tendency of snow due to riming,g/kg
+CT_eva,TCTREVA,tendency of thermal energy due to evaporation,K
+QV_eva,TQVREVA,tendency of water vapour due to evaporation,g/kg
+QR_eva,TQRREVA,tendency of rain due to evaporation,g/kg
+CT_deps,TCTDEPS,tendency of thermal energy due to deposition on snow,K
+QV_deps,TQVDEPS,tendency of water vapour due to deposition on snow,g/kg
+QS_deps,TQSDEPS,tendency of snow due to deposition on snow,g/kg
+CT_depg,TCTDEPG,tendency of thermal energy due to deposition on grauple,K
+QV_depg,TQVDEPG,tendency of water vapour due to deposition on grauple,g/kg
+QG_depg,TQGDEPG,tendency of grauple due to deposition on grauple,g/kg
+CT_acc,TCTACC_,tendency of thermal energy due to collection of rain grauple and snow,K
+QR_acc,TQRACC_,tendency of rain due to collection of rain grauple and snow,g/kg
+QS_acc,TQSACC_,tendency of snow due to collection of rain grauple and snow,g/kg
+QG_acc,TQGACC_,tendency of grauple due to collection of rain grauple and snow,g/kg
+QL_accr,TQLACCR,tendency of cloud water due to accretion of QL on rain,g/kg
+QR_accr,TQRACCR,tendency of rain due to accretion of QL on rain,g/kg
+QR_sedi,TQRSEDI,tendency of rain due to sedimentation,g/kg
+QS_sedi,TQSSEDI,tendency of snow due to sedimentation,g/kg
+QG_sedi,TQGSEDI,tendency of grauple due to sedimentation,g/kg
+QL_sedi,TQLSEDI,tendency of cloud water due to sedimentaion,g/kg
+QI_sedi,TQISEDI,tendency of cloud ice due to sedimentation,g/kg
+QR_auto,TQRAUTO,tendency of rain due to auto-converserin of QL,g/kg
+QS_auto,TQSAUTS,tendency of snow due to auto-conversion of QI,g/kg
+QL_auto,TQLAUTO,tendency of cloud water due to auto-conversion of QL,g/kg
+QI_auto,TQIAUTS,tendency of cloud ice due to auto-conversion of QI,g/kg
+QS_mel,TQSCMEL,tendency of snow due to melting of aggregates,g/kg
+QG_mel,TQGCMEL,tendency of grauple due to melting of aggregates,g/kg
+QI_col,TQIAGGS,tendency of snow due to collection,g/kg
+QS_col,TQSAGGS,tendency of grauple due to collection,g/kg
+Q0,VHR0,instantaneous relative humidity t=0,g/kg
+Q1,VHR1,instantaneous relative humidity t=NSTEP delt,g/kg
+Cloud0,VNT0,instantaneous cloudiness t=0,[]
+Cloud1,VNT1,instantaneous cloudiness t=NSTEP delt,[]
+W0,VOM0,instantaneous vertical velocity t=0,m/s
+W1,VOM1,instantaneous vertical velocity t=NSTEP delt,m/s
+QR0,VQR0,instantaneous rain t=0,g/kg
+QR1,VQR1,instantaneous rain t=NSTEP delt,g/kg
+QI0,VQI0,instantaneous cloud ice t=0,g/kg
+QI1,VQI1,instantaneous cloud ice t=NSTEP delt,g/kg
+QG0,VQG0,instantaneous grauple t=0,g/kg
+QG1,VQG1,instantaneous grauple t=NSTEP delt,g/kg
+QS0,VQS0,instantaneous snow t=0,g/kg
+QS1,VQS1,instantaneous snow t=NSTEP delt,g/kg
+QV0,VQV0,instantaneous water vapor t=0,g/kg
+QV1,VQV1,instantaneous water vapor t=NSTEP delt,g/kg
+QL0,VQL0,instantaneous cloud water t=0,g/kg
+QL1,VQL1,instantaneous cloud water t=NSTEP delt,g/kg
+CT0,VCT0,instantaneous thermal energy t=0,J
+CT1,VCT1,instantaneous thermal energy t=NSTEP delt,J
+EP0,VEP0,instantaneous potential energy t=0,J
+EP1,VEP1,instantaneous potential energy t=NSTEP delt,J
+EK0,VKK0,instantaneous kinetic energy t=0,m2/s2
+EK1,VKK1,instantaneous kinetic energy t=NSTEP delt,m2/s2
+V0,VVV0,instantaneous V-wind t=0,M/s
+V1,VVV1,instantaneous V-wind t=NSTEP delt,m/s
+U0,VUU0,instantaneous U-wind t=0,m/s
+U1,VUU1,instantaneous U-wind t=NSTEP delt,m/s
+PP0,VPP0,instantaneous del p t=0,Pa
+PP1,VPP1,instantaneous del p t=NSTEP delt,Pa
+TKE0,VTE0,instantaneous TKE t=0,Pa
+TKE1,VTE1,instantaneous TKE t=NSTEP delt,Pa
+PPP,PPP,cumulated mass for conversion of extensive tendendecies/fluxes to intensive values,kg
+SURF_RADTEMP1,surf_radtemp1,instantaneous radiative surface temperature,K
+SURF_EFFTEMP1,surf_efftemp1,instantaneous effective surface temperature,K
+H_SURF1,surf_thflx1,instantaneous surface heat flux,W/m2
+Q_SURF1,surf_qflx1,instantaneous surface moisture temperature,W/m2
+U10,U10M1,instantaneous 10m u-wind,m/s
+V10,V10M1,instantaneous 10m v-wind,m/s
+RH2M,RH2M1,instantaneous 2m relative humidyt,[]
+LW_SURF1,LWSU1,instaneous surface longwave rad,W/m2
+SW_DIR1,SWDI1,instaneous surface direct shortwave rad,W/m2
+SW_GLOB1,SWGL1,instaneous surface global shortwave rad,W/m2
+SENS1,SENS1,instaneous sensible heat flux,W/m2
+LE_eva,LATW1,instaneous latent heat flux from evaporation,W/m2
+LE_sub,LATS1,instaneous latent heat flux from sublimation,W/m2
+CT_lars,TCTLARS,tendency of thermal energy due to large ice crystals to snow,K
+CT_dpic,TCTDPIC,tendency of thermal energy due to deposition of vapor on ice,K
+QV_lars,TQVLARS,tendency of specific humidity due to large ice crystals to snow,g/kg
+QV_dpic,TQVDPIC,tendency of specific humidity due to deposition of vapor on ice,g/kg
+QI_lars,TQILARS,tendency of cloud ice due to large ice crystals to snow,g/kg
+QI_dpic,TQIDPIC,tendency of cloud ice due to deposition of vapor on ice,g/kg
+QS_lars,TQSLARS,tendency of snow due to large ice crystals to snow,g/kg
+QI_imfz,TQIIMFZ,tendency of cloud ice due to immersion freezing,g/kg
+QR_imfz,TQRIMFZ,tendency of rain due to immersion freezing,g/kg
+QL_imfz,TQLIMFZ,tendency of cloud liquid due to immersion freezing,g/kg
+QG_imfz,TQGIMFZ,tendency of gaupel due to immersion freezing,g/kg
+CT_imfz,TCTIMFZ,tendency of thermal energy due to immersion freezing,K
